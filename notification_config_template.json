@@ -1,0 +1,7 @@
+{
+    "auth_url": "https://example.org/oauth2/token",
+    "email_url": "https://example.org/project-1/v1/email",
+    "client_id": "abc123xyz",
+    "client_secret": "s3cr3t",
+    "sender_email": "do-not-reply@example.org"
+}

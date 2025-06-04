@@ -175,6 +175,7 @@ def analyze_run(config: dict[str, object], run: dict[str, object]):
                 "reason": "pipeline_not_found"
             }))
             continue
+
         try:
             logging.debug(json.dumps({
                 "event_type": "prepare_analysis_started",
@@ -182,6 +183,9 @@ def analyze_run(config: dict[str, object], run: dict[str, object]):
                 "pipeline_name": pipeline['name']
             }))
             pipeline = pre_analysis.prepare_analysis(config, pipeline, run)
+            if not pipeline:
+                logging.error(json.dumps({"event_type": "prepare_analysis_failed", "sequencing_run_id": sequencing_run_id}))
+                return 
         except Exception as e:
             logging.error(json.dumps({"event_type": "prepare_analysis_failed", "sequencing_run_id": sequencing_run_id, "pipeline_name": pipeline['name'], "error": str(e)}))
             return
