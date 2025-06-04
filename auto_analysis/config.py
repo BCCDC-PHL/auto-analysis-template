@@ -6,11 +6,11 @@ from pathlib import Path
 
 def load_config(config_path: Path) -> dict[str, object]:
     """
-    Load auto-cpo config.
+    Load auto-analysis config.
 
-    :param config_path: Path to auto-cpo config file.
+    :param config_path: Path to auto-analysis config file.
     :type config_path: Path
-    :return: Parsed auto-cpo config
+    :return: Parsed auto-analysis config
     :rtype: dict
     """
     config = {}

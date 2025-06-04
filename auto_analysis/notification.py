@@ -105,8 +105,7 @@ def _collect_email_data(analysis_dir: Path) -> dict:
     :rtype: dict
     """
     email_data = {}
-    analysis_dir_dirname = os.path.dirname(analysis_dir)
-    sequencing_run_id = os.path.basename(analysis_dir_dirname)
+    sequencing_run_id = os.path.basename(analysis_dir)
     email_data['sequencing_run_id'] = sequencing_run_id
     
     libraries_by_library_id = {}
