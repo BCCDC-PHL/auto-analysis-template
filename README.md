@@ -1,4 +1,4 @@
-# QC Collector Template
+# Auto Analysis Template
 
 This repo is intended as a starter template that can be used to create new nextflow-based analysis automation tools. It follows the 
 conventions used by our [auto-ncov](https://github.com/BCCDC-PHL/auto-ncov), [auto-cpo](https://github.com/BCCDC-PHL/auto-cpo) 
