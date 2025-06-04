@@ -40,7 +40,7 @@ entry_points={
 },
 ```
 
-**Optional**: You may want to rename the `auto_analyssi` module itself. If you do that, then you'll need to edit any imports or
+**Optional**: You may want to rename the `auto_analysis` module itself. If you do that, then you'll need to edit any imports or
 references in the codebase to match the change.
 
 4. Create and activate a conda environment
